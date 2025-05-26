@@ -25,7 +25,7 @@ import BarcodeManagement from './pages/admin/BarcodeManagement';
 import StockInManagement from './pages/admin/StockInManagement';
 import StockOutManagement from './pages/admin/StockOutManagement';
 import InventoryTransfers from './pages/admin/InventoryTransfers';
-import BarcodeInventoryPage from './pages/admin/BarcodeInventoryPage';
+import BarcodeInventoryPage from './pages/warehouse/BarcodeInventoryPage';
 import BatchStockInPage from './pages/admin/BatchStockInPage';
 import AdminEnhancedInventoryView from './pages/admin/EnhancedInventoryView';
 import BatchDetailsPage from './pages/admin/BatchDetailsPage';
@@ -39,8 +39,7 @@ import StockOutApproval from './pages/warehouseManager/StockOutApproval';
 import BarcodeLookup from './pages/warehouseManager/BarcodeLookup';
 import { InventoryView as ManagerInventoryView } from './pages/warehouseManager/InventoryView';
 import { InventoryTransfers as ManagerInventoryTransfers } from './pages/warehouseManager/InventoryTransfers';
-import ManagerBatchInventoryPage from './pages/warehouseManager/BatchInventoryPage';
-import ManagerBarcodeInventoryPage from './pages/warehouseManager/BarcodeInventoryPage';
+import ManagerBatchInventoryPage from './pages/warehouse/BatchInventoryPage';
 import ManagerBatchStockInPage from './pages/warehouseManager/BatchStockInPage';
 import BatchOverviewPage from './pages/warehouseManager/BatchOverviewPage';
 import BarcodeAssignmentPage from './pages/warehouseManager/BarcodeAssignmentPage';
@@ -199,7 +198,7 @@ function App() {
                 <Route path="/manager/barcode" element={<BarcodeLookup />} />
                 <Route path="/manager/inventory" element={<ManagerInventoryView />} />
                 <Route path="/manager/inventory/batches" element={<ManagerBatchInventoryPage />} />
-                <Route path="/manager/inventory/barcodes/:batchId" element={<ManagerBarcodeInventoryPage />} />
+                <Route path="/manager/inventory/barcodes/:batchId" element={<BarcodeInventoryPage />} />
                 <Route path="/manager/transfers" element={<ManagerInventoryTransfers />} />
                 
                 {/* Warehouse Manager Enhanced Stock In Flow */}
